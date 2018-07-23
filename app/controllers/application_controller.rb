@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
 
   def hello
     if session[:name]
-      render :root
+      render :hello
   end
 end
