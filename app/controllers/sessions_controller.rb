@@ -6,6 +6,8 @@ class SessionsController < ApplicationController
     if params[name].exists?
       session[:name] = params[:name]
       redirect_to root_path
+    else
+      redirect_to lodin_path
   end
 
   def destroy
