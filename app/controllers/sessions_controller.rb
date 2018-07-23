@@ -4,7 +4,8 @@ class SessionsController < ApplicationController
 
   def create
     if params[name].exists?
-    session[:name] = params[:name]
+      session[:name] = params[:name]
+      redirect_to root_path
   end
 
   def destroy
