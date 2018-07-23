@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    binding.pry
+    byebug
     if !params[:name].blank?
       session[:name] = params[:name]
       redirect_to root_path
