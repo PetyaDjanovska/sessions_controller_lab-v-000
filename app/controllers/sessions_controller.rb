@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+    if params[name].exists?
     session[:name] = params[:name]
   end
 
