@@ -3,8 +3,8 @@ class SessionsController < ApplicationController
   end
 
   def create
-    byebug
     if !params[:name].blank?
+          byebug
       session[:name] = params[:name]
       redirect_to root_path
     else
