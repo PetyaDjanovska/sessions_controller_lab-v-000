@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
 
   def create
     if !params[:name].blank?
+      binding.pry
       session[:name] = params[:name]
       redirect_to root_path
     else
