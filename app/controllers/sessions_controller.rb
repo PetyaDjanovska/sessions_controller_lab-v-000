@@ -2,7 +2,8 @@ class SessionsController < ApplicationController
   def new
   end
 
-  def ceate
+  def create
+    session[:username] = params[:username]
   end
 
   def destroy
