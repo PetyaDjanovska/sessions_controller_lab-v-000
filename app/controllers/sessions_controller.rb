@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
 
   def create
     if !params[:name].blank?
-          byebug
       session[:name] = params[:name]
       redirect_to root_path
     else
